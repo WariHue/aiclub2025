@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM node:20-alpine
 LABEL authors="warih"
 
 WORKDIR /app
