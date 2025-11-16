@@ -5,9 +5,21 @@ import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image} from "@her
 import { describe } from "node:test";
 
 export const ChatCard: React.FC<{ Content:string, isLeft: boolean }> = ({Content, isLeft}) => {
+
+  let color: string = ''
+  let name: string = ''
+
+  if(isLeft){
+    name = '제니'
+  }
+  else{
+    name = '당신'
+  }
+  
   return (
     <>
-      <Card className={"max-w-max items-center bg-red-200 mb-2 shadow-none"}>
+      <div className=''>{name}</div>
+      <Card className={"max-w-max items-center bg-gray-400 mb-2 shadow-none"}>
         <CardBody>
           <p>{Content}</p>
         </CardBody>

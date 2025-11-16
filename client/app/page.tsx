@@ -49,15 +49,15 @@ export default function Home() {
   return (
     <>
       <div className='flex flex-col h-[95%] m-4'>
-        <section className="flex-[85%] overflow-y-auto" ref={containerRef}>
+        <section className="flex-[75%] overflow-y-auto" ref={containerRef}>
           {chats.map((x,i) => (
             <ChatCard Content={x.content} isLeft={x.sender} key={i}/>
           ))}
         </section>
-        <div className='relative h-[60px] bg-transparent m-0'>
+        <div className='relative h-[15px] bg-transparent m-0'>
           <form className="absolute top-2 left-0 w-full flex justify-center" onSubmit={sendMessage}>
             <Input name="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder='메시지를 입력하세요'/>
-            <Button color="primary" className='ml-2' isLoading={loading}>Send</Button>
+            <Button color="primary" className='ml-2' isLoading={loading} type='submit'>Send</Button>
           </form>
         </div>
       </div>
