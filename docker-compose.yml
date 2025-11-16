@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+  server:
+    build: ./server
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./server:/app
+    environment:
+      - API_KEY='AIzaSyAdKtbT9IEZyAxLmDJVIhMxVumtfEbGGc8'
+
+  client:
+    build: ./client
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/app
+    depends_on:
+      - server
