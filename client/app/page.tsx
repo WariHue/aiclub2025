@@ -24,7 +24,7 @@ export default function Home() {
     }
   }, [chats]);
 
-  const api = Axios.create({ baseURL: 'http://server:8000' })
+  const api = Axios.create({ baseURL: 'https://aiapi.warihue.dev' })
   const sendMessage = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const formData = new FormData(e.currentTarget);

@@ -43,3 +43,4 @@ def chat(q: str = ''):
     return {
         'result': response.text,
     }
+

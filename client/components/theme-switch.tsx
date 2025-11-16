@@ -40,7 +40,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
     onChange,
   });
 
-  const api = Axios.create({ baseURL: 'http://127.0.0.1:8000' })
+  const api = Axios.create({ baseURL: 'https://aiapi.warihue.dev' })
   const reset = async () => {
     const {data} = await api.get("/reset")
     location.reload();
