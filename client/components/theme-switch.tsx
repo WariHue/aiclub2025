@@ -39,8 +39,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
     "aria-label": `Switch to ${theme === "light" || isSSR ? "dark" : "light"} mode`,
     onChange,
   });
-
-  const api = Axios.create({ baseURL: 'https://aiapi.warihue.dev' })
+  const api = Axios.create({ baseURL: 'http://localhost:8000' })
   const reset = async () => {
     const {data} = await api.get("/reset")
     location.reload();

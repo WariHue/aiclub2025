@@ -9,6 +9,8 @@
     "lint": "eslint --fix"
   },
   "dependencies": {
+    "@elevenlabs/elevenlabs-js": "^2.28.0",
+    "@elevenlabs/react": "^0.12.3",
     "@heroui/accordion": "2.2.24",
     "@heroui/alert": "2.2.27",
     "@heroui/autocomplete": "2.3.29",
@@ -58,6 +60,7 @@
     "intl-messageformat": "10.7.16",
     "next": "15.3.1",
     "next-themes": "0.4.6",
+    "play-sound": "^1.1.6",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-icons": "^5.5.0"
@@ -66,6 +69,7 @@
     "@next/eslint-plugin-next": "15.3.4",
     "@react-types/shared": "3.32.1",
     "@tailwindcss/postcss": "4.1.11",
+    "@types/fluent-ffmpeg": "^2.1.28",
     "@types/node": "20.5.7",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
